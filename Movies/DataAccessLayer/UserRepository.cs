@@ -8,7 +8,7 @@ namespace DataAccessLayer
 {
     public class UserRepository
     {
-        public List<User> GetUsers()
+        public List<User> GetAllUsers()
         {
             //return list of students
             List<User> users = new List<User>();
