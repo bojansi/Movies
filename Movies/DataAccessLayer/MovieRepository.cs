@@ -9,7 +9,7 @@ namespace DataAccessLayer
     public class MovieRepository
     {
         //get all Movies
-        List<Movie> GetAllMovies()
+        public List<Movie> GetAllMovies()
         {
             List<Movie> movies = new List<Movie>();
 
