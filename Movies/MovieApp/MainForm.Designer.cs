@@ -46,6 +46,7 @@ namespace MovieApp
             this.dataGridViewMovies.RowTemplate.Height = 29;
             this.dataGridViewMovies.Size = new System.Drawing.Size(603, 376);
             this.dataGridViewMovies.TabIndex = 0;
+            //this.dataGridViewMovies.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewMovies_CellContentClick);
             // 
             // MainForm
             // 

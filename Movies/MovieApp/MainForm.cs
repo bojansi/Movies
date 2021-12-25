@@ -34,5 +34,10 @@ namespace MovieApp
             
         }
 
+       /* private void dataGridViewMovies_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //Rating rating = new Rating();
+            //rating.Show();
+        }*/
     }
 }

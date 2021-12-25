@@ -43,13 +43,17 @@ namespace MovieApp
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.buttonAddUser = new System.Windows.Forms.Button();
             this.dataGridViewUser = new System.Windows.Forms.DataGridView();
+            this.buttonUpdateUser = new System.Windows.Forms.Button();
+            this.buttonDeleteUser = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBoxIdDelete = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUser)).BeginInit();
             this.SuspendLayout();
             // 
             // labelId
             // 
             this.labelId.AutoSize = true;
-            this.labelId.Location = new System.Drawing.Point(96, 34);
+            this.labelId.Location = new System.Drawing.Point(97, 66);
             this.labelId.Name = "labelId";
             this.labelId.Size = new System.Drawing.Size(29, 20);
             this.labelId.TabIndex = 0;
@@ -58,7 +62,7 @@ namespace MovieApp
             // labelName
             // 
             this.labelName.AutoSize = true;
-            this.labelName.Location = new System.Drawing.Point(84, 77);
+            this.labelName.Location = new System.Drawing.Point(85, 109);
             this.labelName.Name = "labelName";
             this.labelName.Size = new System.Drawing.Size(41, 20);
             this.labelName.TabIndex = 1;
@@ -67,7 +71,7 @@ namespace MovieApp
             // labelSurname
             // 
             this.labelSurname.AutoSize = true;
-            this.labelSurname.Location = new System.Drawing.Point(56, 117);
+            this.labelSurname.Location = new System.Drawing.Point(57, 149);
             this.labelSurname.Name = "labelSurname";
             this.labelSurname.Size = new System.Drawing.Size(69, 20);
             this.labelSurname.TabIndex = 2;
@@ -76,7 +80,7 @@ namespace MovieApp
             // labelEmail
             // 
             this.labelEmail.AutoSize = true;
-            this.labelEmail.Location = new System.Drawing.Point(66, 162);
+            this.labelEmail.Location = new System.Drawing.Point(67, 194);
             this.labelEmail.Name = "labelEmail";
             this.labelEmail.Size = new System.Drawing.Size(59, 20);
             this.labelEmail.TabIndex = 3;
@@ -85,7 +89,7 @@ namespace MovieApp
             // labelUserName
             // 
             this.labelUserName.AutoSize = true;
-            this.labelUserName.Location = new System.Drawing.Point(12, 213);
+            this.labelUserName.Location = new System.Drawing.Point(13, 245);
             this.labelUserName.Name = "labelUserName";
             this.labelUserName.Size = new System.Drawing.Size(113, 20);
             this.labelUserName.TabIndex = 4;
@@ -94,7 +98,7 @@ namespace MovieApp
             // labelPassword
             // 
             this.labelPassword.AutoSize = true;
-            this.labelPassword.Location = new System.Drawing.Point(79, 250);
+            this.labelPassword.Location = new System.Drawing.Point(80, 282);
             this.labelPassword.Name = "labelPassword";
             this.labelPassword.Size = new System.Drawing.Size(46, 20);
             this.labelPassword.TabIndex = 5;
@@ -102,51 +106,51 @@ namespace MovieApp
             // 
             // textBoxId
             // 
-            this.textBoxId.Location = new System.Drawing.Point(143, 31);
+            this.textBoxId.Location = new System.Drawing.Point(144, 63);
             this.textBoxId.Name = "textBoxId";
             this.textBoxId.Size = new System.Drawing.Size(125, 27);
             this.textBoxId.TabIndex = 6;
             // 
             // textBoxName
             // 
-            this.textBoxName.Location = new System.Drawing.Point(143, 74);
+            this.textBoxName.Location = new System.Drawing.Point(144, 106);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(125, 27);
             this.textBoxName.TabIndex = 7;
             // 
             // textBoxSurname
             // 
-            this.textBoxSurname.Location = new System.Drawing.Point(143, 114);
+            this.textBoxSurname.Location = new System.Drawing.Point(144, 146);
             this.textBoxSurname.Name = "textBoxSurname";
             this.textBoxSurname.Size = new System.Drawing.Size(125, 27);
             this.textBoxSurname.TabIndex = 8;
             // 
             // textBoxEmail
             // 
-            this.textBoxEmail.Location = new System.Drawing.Point(143, 159);
+            this.textBoxEmail.Location = new System.Drawing.Point(144, 191);
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(125, 27);
             this.textBoxEmail.TabIndex = 9;
             // 
             // textBoxUserName
             // 
-            this.textBoxUserName.Location = new System.Drawing.Point(143, 210);
+            this.textBoxUserName.Location = new System.Drawing.Point(144, 242);
             this.textBoxUserName.Name = "textBoxUserName";
             this.textBoxUserName.Size = new System.Drawing.Size(125, 27);
             this.textBoxUserName.TabIndex = 10;
             // 
             // textBoxPassword
             // 
-            this.textBoxPassword.Location = new System.Drawing.Point(143, 247);
+            this.textBoxPassword.Location = new System.Drawing.Point(144, 279);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.Size = new System.Drawing.Size(125, 27);
             this.textBoxPassword.TabIndex = 11;
             // 
             // buttonAddUser
             // 
-            this.buttonAddUser.Location = new System.Drawing.Point(154, 312);
+            this.buttonAddUser.Location = new System.Drawing.Point(12, 356);
             this.buttonAddUser.Name = "buttonAddUser";
-            this.buttonAddUser.Size = new System.Drawing.Size(94, 29);
+            this.buttonAddUser.Size = new System.Drawing.Size(125, 29);
             this.buttonAddUser.TabIndex = 12;
             this.buttonAddUser.Text = "Dodaj korisnika";
             this.buttonAddUser.UseVisualStyleBackColor = true;
@@ -157,19 +161,59 @@ namespace MovieApp
             this.dataGridViewUser.AllowUserToAddRows = false;
             this.dataGridViewUser.AllowUserToDeleteRows = false;
             this.dataGridViewUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewUser.Location = new System.Drawing.Point(333, 21);
+            this.dataGridViewUser.Location = new System.Drawing.Point(296, 21);
             this.dataGridViewUser.Name = "dataGridViewUser";
             this.dataGridViewUser.ReadOnly = true;
             this.dataGridViewUser.RowHeadersWidth = 51;
             this.dataGridViewUser.RowTemplate.Height = 29;
-            this.dataGridViewUser.Size = new System.Drawing.Size(707, 319);
+            this.dataGridViewUser.Size = new System.Drawing.Size(759, 319);
             this.dataGridViewUser.TabIndex = 13;
+            // 
+            // buttonUpdateUser
+            // 
+            this.buttonUpdateUser.Location = new System.Drawing.Point(152, 356);
+            this.buttonUpdateUser.Name = "buttonUpdateUser";
+            this.buttonUpdateUser.Size = new System.Drawing.Size(139, 29);
+            this.buttonUpdateUser.TabIndex = 14;
+            this.buttonUpdateUser.Text = "Ažuriraj korisnika";
+            this.buttonUpdateUser.UseVisualStyleBackColor = true;
+            this.buttonUpdateUser.Click += new System.EventHandler(this.buttonUpdateUser_Click);
+            // 
+            // buttonDeleteUser
+            // 
+            this.buttonDeleteUser.Location = new System.Drawing.Point(771, 380);
+            this.buttonDeleteUser.Name = "buttonDeleteUser";
+            this.buttonDeleteUser.Size = new System.Drawing.Size(147, 29);
+            this.buttonDeleteUser.TabIndex = 15;
+            this.buttonDeleteUser.Text = "Obriši korisnika";
+            this.buttonDeleteUser.UseVisualStyleBackColor = true;
+            this.buttonDeleteUser.Click += new System.EventHandler(this.buttonDeleteUser_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(399, 384);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(240, 20);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "Unesi Id korisnika kog zelis obrisati";
+            // 
+            // textBoxIdDelete
+            // 
+            this.textBoxIdDelete.Location = new System.Drawing.Point(645, 381);
+            this.textBoxIdDelete.Name = "textBoxIdDelete";
+            this.textBoxIdDelete.Size = new System.Drawing.Size(97, 27);
+            this.textBoxIdDelete.TabIndex = 17;
             // 
             // Users
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 450);
+            this.Controls.Add(this.textBoxIdDelete);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.buttonDeleteUser);
+            this.Controls.Add(this.buttonUpdateUser);
             this.Controls.Add(this.dataGridViewUser);
             this.Controls.Add(this.buttonAddUser);
             this.Controls.Add(this.textBoxPassword);
@@ -209,5 +253,9 @@ namespace MovieApp
         private System.Windows.Forms.TextBox textBoxPassword;
         private System.Windows.Forms.Button buttonAddUser;
         private System.Windows.Forms.DataGridView dataGridViewUser;
+        private System.Windows.Forms.Button buttonUpdateUser;
+        private System.Windows.Forms.Button buttonDeleteUser;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBoxIdDelete;
     }
 }
