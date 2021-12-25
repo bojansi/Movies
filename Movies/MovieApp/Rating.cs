@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MovieApp.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +14,52 @@ namespace MovieApp
         public Rating()
         {
             InitializeComponent();
+        }
+
+        private void pictureBoxStar5_Click(object sender, EventArgs e)
+        {
+            pictureBoxStar1.Image = Resources.yellow_star;
+            pictureBoxStar2.Image = Resources.yellow_star;
+            pictureBoxStar3.Image = Resources.yellow_star;
+            pictureBoxStar4.Image = Resources.yellow_star;
+            pictureBoxStar5.Image = Resources.yellow_star;
+
+        }
+
+        private void pictureBoxStar4_Click(object sender, EventArgs e)
+        {
+            pictureBoxStar1.Image = Resources.yellow_star;
+            pictureBoxStar2.Image = Resources.yellow_star;
+            pictureBoxStar3.Image = Resources.yellow_star;
+            pictureBoxStar4.Image = Resources.yellow_star;
+            pictureBoxStar5.Image = Resources.white_star;
+        }
+
+        private void pictureBoxStar3_Click(object sender, EventArgs e)
+        {
+            pictureBoxStar1.Image = Resources.yellow_star;
+            pictureBoxStar2.Image = Resources.yellow_star;
+            pictureBoxStar3.Image = Resources.yellow_star;
+            pictureBoxStar4.Image = Resources.white_star;
+            pictureBoxStar5.Image = Resources.white_star;
+        }
+
+        private void pictureBoxStar2_Click(object sender, EventArgs e)
+        {
+            pictureBoxStar1.Image = Resources.yellow_star;
+            pictureBoxStar2.Image = Resources.yellow_star;
+            pictureBoxStar3.Image = Resources.white_star;
+            pictureBoxStar4.Image = Resources.white_star;
+            pictureBoxStar5.Image = Resources.white_star;
+        }
+
+        private void pictureBoxStar1_Click(object sender, EventArgs e)
+        {
+            pictureBoxStar1.Image = Resources.yellow_star;
+            pictureBoxStar2.Image = Resources.white_star;
+            pictureBoxStar3.Image = Resources.white_star;
+            pictureBoxStar4.Image = Resources.white_star;
+            pictureBoxStar5.Image = Resources.white_star;
         }
     }
 }
