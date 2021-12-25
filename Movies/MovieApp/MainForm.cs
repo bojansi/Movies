@@ -23,10 +23,15 @@ namespace MovieApp
         {
             List<Movie> movies = this.movieBusiness.GetAllMovies();
 
-            foreach (Movie m in movies)
-            {
-                listBoxMovies.Items.Add(m.Id + ". " + m.Name + " " + m.Year + " " + m.Genre + " " + m.Favorite + " " + m.IMDBLink + " " + m.Description);
-            }
+            dataGridViewMovies.DataSource = movies;
+            dataGridViewMovies.Columns["Id"].Visible = false;
+            dataGridViewMovies.Columns["Name"].Width = 350;
+            dataGridViewMovies.Columns["Year"].Width = 70;
+            dataGridViewMovies.Columns["Genre"].Width = 130;
+            dataGridViewMovies.Columns["Favorite"].Visible = false;
+            dataGridViewMovies.Columns["IMDBLink"].Visible = false;
+            dataGridViewMovies.Columns["Description"].Visible = false;
+            
         }
 
     }

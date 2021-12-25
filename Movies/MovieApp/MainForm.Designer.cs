@@ -30,35 +30,41 @@ namespace MovieApp
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.listBoxMovies = new System.Windows.Forms.ListBox();
+            this.dataGridViewMovies = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMovies)).BeginInit();
             this.SuspendLayout();
             // 
-            // listBoxMovies
+            // dataGridViewMovies
             // 
-            this.listBoxMovies.FormattingEnabled = true;
-            this.listBoxMovies.ItemHeight = 20;
-            this.listBoxMovies.Location = new System.Drawing.Point(245, 35);
-            this.listBoxMovies.Name = "listBoxMovies";
-            this.listBoxMovies.Size = new System.Drawing.Size(671, 284);
-            this.listBoxMovies.TabIndex = 0;
+            this.dataGridViewMovies.AllowUserToAddRows = false;
+            this.dataGridViewMovies.AllowUserToDeleteRows = false;
+            this.dataGridViewMovies.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewMovies.Location = new System.Drawing.Point(461, 23);
+            this.dataGridViewMovies.Name = "dataGridViewMovies";
+            this.dataGridViewMovies.ReadOnly = true;
+            this.dataGridViewMovies.RowHeadersWidth = 51;
+            this.dataGridViewMovies.RowTemplate.Height = 29;
+            this.dataGridViewMovies.Size = new System.Drawing.Size(603, 376);
+            this.dataGridViewMovies.TabIndex = 0;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(928, 531);
-            this.Controls.Add(this.listBoxMovies);
+            this.ClientSize = new System.Drawing.Size(1074, 534);
+            this.Controls.Add(this.dataGridViewMovies);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.Text = "Filmovi";
             this.Load += new System.EventHandler(this.MainForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMovies)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.ListBox listBoxMovies;
+        private System.Windows.Forms.DataGridView dataGridViewMovies;
     }
 }
