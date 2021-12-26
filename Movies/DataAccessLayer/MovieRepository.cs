@@ -60,7 +60,7 @@ namespace DataAccessLayer
             {
                 SqlCommand sqlCommand = new SqlCommand();
                 sqlCommand.Connection = sqlConnection;
-                sqlCommand.CommandText = string.Format("UPDATE Movies Name='{0}', Year='{1}', Genre='{2}', Favorite= '{3}', IMDBLink='{4}', Description='{5}' WHERE Id='{6}'", m.Name, m.Year, m.Genre, m.Favorite, m.IMDBLink, m.Description);
+                sqlCommand.CommandText = string.Format("UPDATE Movies SET Name='{0}', Year={1}, Genre='{2}', Favorite= '{3}', IMDBLink='{4}', Description='{5}' WHERE Id={6}", m.Name, m.Year, m.Genre, m.Favorite, m.IMDBLink, m.Description, m.Id);
 
                 sqlConnection.Open();
 

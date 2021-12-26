@@ -35,18 +35,18 @@ namespace MovieApp
             this.labelYear = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.richTextBoxDescription = new System.Windows.Forms.RichTextBox();
-            this.checkBoxFavorite = new System.Windows.Forms.CheckBox();
             this.labelIMDB = new System.Windows.Forms.Label();
             this.textBoxId = new System.Windows.Forms.TextBox();
             this.textBoxName = new System.Windows.Forms.TextBox();
             this.textBoxYear = new System.Windows.Forms.TextBox();
             this.textBoxGenre = new System.Windows.Forms.TextBox();
             this.textBoxIMDB = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dataGridViewMovies = new System.Windows.Forms.DataGridView();
+            this.buttonAddMovie = new System.Windows.Forms.Button();
+            this.buttonUpdateMovie = new System.Windows.Forms.Button();
+            this.buttonDeleteMovie = new System.Windows.Forms.Button();
+            this.checkBoxFavorite = new System.Windows.Forms.CheckBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMovies)).BeginInit();
             this.SuspendLayout();
             // 
             // labelId
@@ -93,16 +93,6 @@ namespace MovieApp
             this.richTextBoxDescription.TabIndex = 4;
             this.richTextBoxDescription.Text = "Opis";
             // 
-            // checkBoxFavorite
-            // 
-            this.checkBoxFavorite.AutoSize = true;
-            this.checkBoxFavorite.Location = new System.Drawing.Point(31, 433);
-            this.checkBoxFavorite.Name = "checkBoxFavorite";
-            this.checkBoxFavorite.Size = new System.Drawing.Size(87, 24);
-            this.checkBoxFavorite.TabIndex = 5;
-            this.checkBoxFavorite.Text = "Omiljeni";
-            this.checkBoxFavorite.UseVisualStyleBackColor = true;
-            // 
             // labelIMDB
             // 
             this.labelIMDB.AutoSize = true;
@@ -147,59 +137,72 @@ namespace MovieApp
             this.textBoxIMDB.Size = new System.Drawing.Size(125, 27);
             this.textBoxIMDB.TabIndex = 11;
             // 
-            // dataGridView1
+            // dataGridViewMovies
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(386, 12);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(915, 548);
-            this.dataGridView1.TabIndex = 12;
+            this.dataGridViewMovies.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewMovies.Location = new System.Drawing.Point(386, 12);
+            this.dataGridViewMovies.Name = "dataGridViewMovies";
+            this.dataGridViewMovies.RowHeadersWidth = 51;
+            this.dataGridViewMovies.RowTemplate.Height = 29;
+            this.dataGridViewMovies.Size = new System.Drawing.Size(987, 548);
+            this.dataGridViewMovies.TabIndex = 12;
             // 
-            // button1
+            // buttonAddMovie
             // 
-            this.button1.Location = new System.Drawing.Point(12, 517);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 29);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Dodaj film";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonAddMovie.Location = new System.Drawing.Point(12, 517);
+            this.buttonAddMovie.Name = "buttonAddMovie";
+            this.buttonAddMovie.Size = new System.Drawing.Size(94, 29);
+            this.buttonAddMovie.TabIndex = 13;
+            this.buttonAddMovie.Text = "Dodaj film";
+            this.buttonAddMovie.UseVisualStyleBackColor = true;
+            this.buttonAddMovie.Click += new System.EventHandler(this.buttonAddMovie_Click);
             // 
-            // button2
+            // buttonUpdateMovie
             // 
-            this.button2.Location = new System.Drawing.Point(124, 517);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(94, 29);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "Izmeni film";
-            this.button2.UseVisualStyleBackColor = true;
+            this.buttonUpdateMovie.Location = new System.Drawing.Point(124, 517);
+            this.buttonUpdateMovie.Name = "buttonUpdateMovie";
+            this.buttonUpdateMovie.Size = new System.Drawing.Size(94, 29);
+            this.buttonUpdateMovie.TabIndex = 14;
+            this.buttonUpdateMovie.Text = "Izmeni film";
+            this.buttonUpdateMovie.UseVisualStyleBackColor = true;
+            this.buttonUpdateMovie.Click += new System.EventHandler(this.buttonUpdateMovie_Click);
             // 
-            // button3
+            // buttonDeleteMovie
             // 
-            this.button3.Location = new System.Drawing.Point(236, 517);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(94, 29);
-            this.button3.TabIndex = 15;
-            this.button3.Text = "Obrisi film";
-            this.button3.UseVisualStyleBackColor = true;
+            this.buttonDeleteMovie.Location = new System.Drawing.Point(236, 517);
+            this.buttonDeleteMovie.Name = "buttonDeleteMovie";
+            this.buttonDeleteMovie.Size = new System.Drawing.Size(94, 29);
+            this.buttonDeleteMovie.TabIndex = 15;
+            this.buttonDeleteMovie.Text = "Obrisi film";
+            this.buttonDeleteMovie.UseVisualStyleBackColor = true;
+            this.buttonDeleteMovie.Click += new System.EventHandler(this.buttonDeleteMovie_Click);
+            // 
+            // checkBoxFavorite
+            // 
+            this.checkBoxFavorite.AutoSize = true;
+            this.checkBoxFavorite.Location = new System.Drawing.Point(31, 439);
+            this.checkBoxFavorite.Name = "checkBoxFavorite";
+            this.checkBoxFavorite.Size = new System.Drawing.Size(87, 24);
+            this.checkBoxFavorite.TabIndex = 16;
+            this.checkBoxFavorite.Text = "Omiljeni";
+            this.checkBoxFavorite.UseVisualStyleBackColor = true;
             // 
             // Movies
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1307, 592);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(1385, 592);
+            this.Controls.Add(this.checkBoxFavorite);
+            this.Controls.Add(this.buttonDeleteMovie);
+            this.Controls.Add(this.buttonUpdateMovie);
+            this.Controls.Add(this.buttonAddMovie);
+            this.Controls.Add(this.dataGridViewMovies);
             this.Controls.Add(this.textBoxIMDB);
             this.Controls.Add(this.textBoxGenre);
             this.Controls.Add(this.textBoxYear);
             this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.textBoxId);
             this.Controls.Add(this.labelIMDB);
-            this.Controls.Add(this.checkBoxFavorite);
             this.Controls.Add(this.richTextBoxDescription);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.labelYear);
@@ -208,7 +211,8 @@ namespace MovieApp
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Movies";
             this.Text = "Filmovi";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.Movies_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMovies)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -221,16 +225,16 @@ namespace MovieApp
         private System.Windows.Forms.Label labelYear;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RichTextBox richTextBoxDescription;
-        private System.Windows.Forms.CheckBox checkBoxFavorite;
         private System.Windows.Forms.Label labelIMDB;
         private System.Windows.Forms.TextBox textBoxId;
         private System.Windows.Forms.TextBox textBoxName;
         private System.Windows.Forms.TextBox textBoxYear;
         private System.Windows.Forms.TextBox textBoxGenre;
         private System.Windows.Forms.TextBox textBoxIMDB;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.DataGridView dataGridViewMovies;
+        private System.Windows.Forms.Button buttonAddMovie;
+        private System.Windows.Forms.Button buttonUpdateMovie;
+        private System.Windows.Forms.Button buttonDeleteMovie;
+        private System.Windows.Forms.CheckBox checkBoxFavorite;
     }
 }

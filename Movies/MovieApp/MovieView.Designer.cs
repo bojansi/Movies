@@ -92,7 +92,7 @@ namespace MovieApp
             this.labelIMDB.Size = new System.Drawing.Size(73, 20);
             this.labelIMDB.TabIndex = 5;
             this.labelIMDB.Text = "IMDB link";
-            this.labelIMDB.Click += new System.EventHandler(this.labelIMDB_Click);
+            //this.labelIMDB.Click += new System.EventHandler(this.labelIMDB_Click);
             // 
             // MovieView
             // 

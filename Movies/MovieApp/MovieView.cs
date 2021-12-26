@@ -13,7 +13,7 @@ namespace MovieApp
 {
     public partial class MovieView : Form
     {
-        private Movie movie;
+      /*  private Movie movie;
         private readonly MovieBusiness movieBusiness;
         public MovieView(MovieBusiness movieBusiness, Movie movie)
         {
@@ -31,6 +31,6 @@ namespace MovieApp
             Process.Start(movie.IMDBLink);
         }
 
-
+        */
     }
 }

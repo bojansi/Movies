@@ -209,7 +209,7 @@ namespace MovieApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 450);
+            this.ClientSize = new System.Drawing.Size(1165, 519);
             this.Controls.Add(this.textBoxIdDelete);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonDeleteUser);
@@ -229,7 +229,7 @@ namespace MovieApp
             this.Controls.Add(this.labelName);
             this.Controls.Add(this.labelId);
             this.Name = "Users";
-            this.Text = "User";
+            this.Text = "Korisnik";
             this.Load += new System.EventHandler(this.Users_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUser)).EndInit();
             this.ResumeLayout(false);
