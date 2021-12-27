@@ -110,5 +110,24 @@ namespace MovieApp
             dataGridViewMovies.DataSource = movies;
 
         }
+
+        private void dataGridViewMovies_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            textBoxId.Text = dataGridViewMovies.SelectedRows[0].Cells["Id"].Value.ToString();
+            textBoxName.Text = dataGridViewMovies.SelectedRows[0].Cells["Name"].Value.ToString();
+            textBoxYear.Text = dataGridViewMovies.SelectedRows[0].Cells["Year"].Value.ToString();
+            textBoxGenre.Text = dataGridViewMovies.SelectedRows[0].Cells["Genre"].Value.ToString();
+            richTextBoxDescription.Text = dataGridViewMovies.SelectedRows[0].Cells["Description"].Value.ToString();
+            textBoxIMDB.Text = dataGridViewMovies.SelectedRows[0].Cells["IMDBLink"].Value.ToString();
+            String cb = dataGridViewMovies.SelectedRows[0].Cells["Favorite"].Value.ToString().ToLower();
+            if(cb == "true")
+            {
+                checkBoxFavorite.Checked = true;
+            }
+            else
+            {
+                checkBoxFavorite.Checked = false;
+            }
+        }
     }
 }

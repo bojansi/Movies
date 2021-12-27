@@ -104,6 +104,7 @@ namespace MovieApp
             // 
             // textBoxId
             // 
+            this.textBoxId.Enabled = false;
             this.textBoxId.Location = new System.Drawing.Point(205, 46);
             this.textBoxId.Name = "textBoxId";
             this.textBoxId.Size = new System.Drawing.Size(125, 27);
@@ -139,13 +140,24 @@ namespace MovieApp
             // 
             // dataGridViewMovies
             // 
+            this.dataGridViewMovies.AllowUserToAddRows = false;
+            this.dataGridViewMovies.AllowUserToDeleteRows = false;
+            this.dataGridViewMovies.AllowUserToResizeColumns = false;
+            this.dataGridViewMovies.AllowUserToResizeRows = false;
+            this.dataGridViewMovies.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dataGridViewMovies.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewMovies.Location = new System.Drawing.Point(386, 12);
+            this.dataGridViewMovies.MultiSelect = false;
             this.dataGridViewMovies.Name = "dataGridViewMovies";
+            this.dataGridViewMovies.ReadOnly = true;
+            this.dataGridViewMovies.RowHeadersVisible = false;
             this.dataGridViewMovies.RowHeadersWidth = 51;
+            this.dataGridViewMovies.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dataGridViewMovies.RowTemplate.Height = 29;
+            this.dataGridViewMovies.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewMovies.Size = new System.Drawing.Size(987, 548);
             this.dataGridViewMovies.TabIndex = 12;
+            this.dataGridViewMovies.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewMovies_CellClick);
             // 
             // buttonAddMovie
             // 
