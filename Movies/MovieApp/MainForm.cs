@@ -13,10 +13,12 @@ namespace MovieApp
     public partial class MainForm : Form
     {
         private readonly MovieBusiness movieBusiness;
+        private readonly UserBusiness userBusiness;
         public MainForm()
         {
-            this.movieBusiness = new MovieBusiness();
             InitializeComponent();
+            this.movieBusiness = new MovieBusiness();
+            this.userBusiness = new UserBusiness();
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -33,11 +35,27 @@ namespace MovieApp
             dataGridViewMovies.Columns["Description"].Visible = false;
             
         }
-
-       /* private void dataGridViewMovies_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void buttonToUser_Click(object sender, EventArgs e)
         {
-            //Rating rating = new Rating();
-            //rating.Show();
-        }*/
+            Login login = new Login();
+            if(login.ShowDialog() == DialogResult.OK)
+            {
+                Users users = new Users();
+                users.Show();
+            }
+        }
+
+        private void buttonToMovie_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            if(login.ShowDialog() == DialogResult.OK)
+            {
+                Movies movies = new Movies();
+                movies.Show();
+            }
+
+        }
+
+
     }
 }

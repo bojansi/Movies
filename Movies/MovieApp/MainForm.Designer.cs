@@ -31,6 +31,8 @@ namespace MovieApp
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.dataGridViewMovies = new System.Windows.Forms.DataGridView();
+            this.buttonToUser = new System.Windows.Forms.Button();
+            this.buttonToMovie = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMovies)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,7 +48,26 @@ namespace MovieApp
             this.dataGridViewMovies.RowTemplate.Height = 29;
             this.dataGridViewMovies.Size = new System.Drawing.Size(603, 376);
             this.dataGridViewMovies.TabIndex = 0;
-            //this.dataGridViewMovies.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewMovies_CellContentClick);
+            // 
+            // buttonToUser
+            // 
+            this.buttonToUser.Location = new System.Drawing.Point(101, 304);
+            this.buttonToUser.Name = "buttonToUser";
+            this.buttonToUser.Size = new System.Drawing.Size(155, 29);
+            this.buttonToUser.TabIndex = 2;
+            this.buttonToUser.Text = "Izmeni korisnika";
+            this.buttonToUser.UseVisualStyleBackColor = true;
+            this.buttonToUser.Click += new System.EventHandler(this.buttonToUser_Click);
+            // 
+            // buttonToMovie
+            // 
+            this.buttonToMovie.Location = new System.Drawing.Point(101, 222);
+            this.buttonToMovie.Name = "buttonToMovie";
+            this.buttonToMovie.Size = new System.Drawing.Size(155, 29);
+            this.buttonToMovie.TabIndex = 3;
+            this.buttonToMovie.Text = "Izmeni Film";
+            this.buttonToMovie.UseVisualStyleBackColor = true;
+            this.buttonToMovie.Click += new System.EventHandler(this.buttonToMovie_Click);
             // 
             // MainForm
             // 
@@ -54,6 +75,8 @@ namespace MovieApp
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(1074, 534);
+            this.Controls.Add(this.buttonToMovie);
+            this.Controls.Add(this.buttonToUser);
             this.Controls.Add(this.dataGridViewMovies);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
@@ -67,5 +90,7 @@ namespace MovieApp
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridViewMovies;
+        private System.Windows.Forms.Button buttonToUser;
+        private System.Windows.Forms.Button buttonToMovie;
     }
 }
