@@ -1,5 +1,6 @@
 ﻿using BusinessLogicLayer;
 using DataAccessLayer.Modals;
+using MovieApp.Properties;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,24 +14,50 @@ namespace MovieApp
 {
     public partial class MovieView : Form
     {
-      /*  private Movie movie;
-        private readonly MovieBusiness movieBusiness;
-        public MovieView(MovieBusiness movieBusiness, Movie movie)
+        private void pictureBoxStar1_Click(object sender, EventArgs e)
         {
-            InitializeComponent();
-            this.movieBusiness = movieBusiness;
-            labelName.Text = movie.Name;
-            labelYear.Text = "Godina proizvodnje: " + movie.Year.ToString();
-            labelGenre.Text = "Zanr filma : " + movie.Genre;
-            labelDescription.Text = movie.Description;
-            checkBoxFavorite.Checked = movie.Favorite;
+            pictureBoxStar1.Image = Resources.yellow_star;
+            pictureBoxStar2.Image = Resources.white_star;
+            pictureBoxStar3.Image = Resources.white_star;
+            pictureBoxStar4.Image = Resources.white_star;
+            pictureBoxStar5.Image = Resources.white_star;
         }
 
-        private void labelIMDB_Click(object sender, EventArgs e)
+        private void pictureBoxStar2_Click(object sender, EventArgs e)
         {
-            Process.Start(movie.IMDBLink);
+            pictureBoxStar1.Image = Resources.yellow_star;
+            pictureBoxStar2.Image = Resources.yellow_star;
+            pictureBoxStar3.Image = Resources.white_star;
+            pictureBoxStar4.Image = Resources.white_star;
+            pictureBoxStar5.Image = Resources.white_star;
         }
 
-        */
+        private void pictureBoxStar3_Click(object sender, EventArgs e)
+        {
+            pictureBoxStar1.Image = Resources.yellow_star;
+            pictureBoxStar2.Image = Resources.yellow_star;
+            pictureBoxStar3.Image = Resources.yellow_star;
+            pictureBoxStar4.Image = Resources.white_star;
+            pictureBoxStar5.Image = Resources.white_star;
+        }
+
+        private void pictureBoxStar4_Click(object sender, EventArgs e)
+        {
+            pictureBoxStar1.Image = Resources.yellow_star;
+            pictureBoxStar2.Image = Resources.yellow_star;
+            pictureBoxStar3.Image = Resources.yellow_star;
+            pictureBoxStar4.Image = Resources.yellow_star;
+            pictureBoxStar5.Image = Resources.white_star;
+        }
+
+        private void pictureBoxStar5_Click(object sender, EventArgs e)
+        {
+            pictureBoxStar1.Image = Resources.yellow_star;
+            pictureBoxStar2.Image = Resources.yellow_star;
+            pictureBoxStar3.Image = Resources.yellow_star;
+            pictureBoxStar4.Image = Resources.yellow_star;
+            pictureBoxStar5.Image = Resources.yellow_star;
+        }
+
     }
 }
