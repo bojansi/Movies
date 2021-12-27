@@ -77,9 +77,9 @@ namespace MovieApp
         //delete user
         private void buttonDeleteUser_Click(object sender, EventArgs e)
         {
-            if(textBoxIdDelete.Text != "")
+            if(textBoxId.Text != "")
             {
-                int id = Convert.ToInt32(textBoxIdDelete.Text);
+                int id = Convert.ToInt32(textBoxId.Text);
                 if(this.userBusiness.DeleteUser(id) == true)
                 {
                     MessageBox.Show("Uspesno ste izbrisali korisnika!");
@@ -108,7 +108,17 @@ namespace MovieApp
             textBoxEmail.Text = null;
             textBoxUserName.Text = null;
             textBoxPassword.Text = null;
-            textBoxIdDelete.Text = null;
+            //textBoxIdDelete.Text = null;
+        }
+
+        private void dataGridViewUser_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            textBoxId.Text = dataGridViewUser.SelectedRows[0].Cells["Id"].Value.ToString();
+            textBoxName.Text = dataGridViewUser.SelectedRows[0].Cells["Name"].Value.ToString();
+            textBoxSurname.Text = dataGridViewUser.SelectedRows[0].Cells["Surname"].Value.ToString();
+            textBoxEmail.Text = dataGridViewUser.SelectedRows[0].Cells["Email"].Value.ToString();
+            textBoxUserName.Text = dataGridViewUser.SelectedRows[0].Cells["UserName"].Value.ToString();
+            textBoxPassword.Text = dataGridViewUser.SelectedRows[0].Cells["Password"].Value.ToString();
         }
 
 
