@@ -40,14 +40,22 @@ namespace MovieApp
             // 
             this.dataGridViewMovies.AllowUserToAddRows = false;
             this.dataGridViewMovies.AllowUserToDeleteRows = false;
-            this.dataGridViewMovies.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewMovies.AllowUserToResizeColumns = false;
+            this.dataGridViewMovies.AllowUserToResizeRows = false;
+            this.dataGridViewMovies.ColumnHeadersHeight = 29;
+            this.dataGridViewMovies.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridViewMovies.Location = new System.Drawing.Point(461, 23);
+            this.dataGridViewMovies.MultiSelect = false;
             this.dataGridViewMovies.Name = "dataGridViewMovies";
             this.dataGridViewMovies.ReadOnly = true;
+            this.dataGridViewMovies.RowHeadersVisible = false;
             this.dataGridViewMovies.RowHeadersWidth = 51;
+            this.dataGridViewMovies.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dataGridViewMovies.RowTemplate.Height = 29;
-            this.dataGridViewMovies.Size = new System.Drawing.Size(603, 376);
+            this.dataGridViewMovies.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridViewMovies.Size = new System.Drawing.Size(547, 376);
             this.dataGridViewMovies.TabIndex = 0;
+            this.dataGridViewMovies.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewMovies_CellDoubleClick);
             // 
             // buttonToUser
             // 
@@ -74,7 +82,7 @@ namespace MovieApp
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(1074, 534);
+            this.ClientSize = new System.Drawing.Size(1061, 447);
             this.Controls.Add(this.buttonToMovie);
             this.Controls.Add(this.buttonToUser);
             this.Controls.Add(this.dataGridViewMovies);

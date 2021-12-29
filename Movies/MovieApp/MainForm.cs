@@ -13,12 +13,11 @@ namespace MovieApp
     public partial class MainForm : Form
     {
         private readonly MovieBusiness movieBusiness;
-        private readonly UserBusiness userBusiness;
+
         public MainForm()
         {
             InitializeComponent();
             this.movieBusiness = new MovieBusiness();
-            this.userBusiness = new UserBusiness();
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -27,9 +26,6 @@ namespace MovieApp
 
             dataGridViewMovies.DataSource = movies;
             dataGridViewMovies.Columns["Id"].Visible = false;
-            dataGridViewMovies.Columns["Name"].Width = 350;
-            dataGridViewMovies.Columns["Year"].Width = 70;
-            dataGridViewMovies.Columns["Genre"].Width = 130;
             dataGridViewMovies.Columns["Favorite"].Visible = false;
             dataGridViewMovies.Columns["IMDBLink"].Visible = false;
             dataGridViewMovies.Columns["Description"].Visible = false;
@@ -56,6 +52,19 @@ namespace MovieApp
 
         }
 
-
+        private void dataGridViewMovies_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Login login = new Login();
+            if(login.ShowDialog() == DialogResult.OK)
+            { 
+                if(dataGridViewMovies.SelectedRows[0] != null)
+                {
+                    int movieId = Convert.ToInt32(dataGridViewMovies.SelectedRows[0].Cells["Id"].Value);
+                    Movie m = this.movieBusiness.GetMoviesById(movieId);
+                    MovieView mv = new MovieView(this.movieBusiness, m);
+                    mv.Show();
+                }
+            }
+        }
     }
 }
