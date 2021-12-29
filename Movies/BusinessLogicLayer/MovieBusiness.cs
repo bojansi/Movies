@@ -21,6 +21,13 @@ namespace BusinessLogicLayer
             return this.movieRepository.GetAllMovies();
         }
 
+        public Movie GetMoviesById(int id)
+        {
+            return this.movieRepository.GetAllMovies().FirstOrDefault(m => m.Id.Equals(id));
+        }
+
+
+
         //return all Movies with requiredGenre
         public List<Movie> GetMovieWithRequiredGenre(bool favorite, String genre)
         {

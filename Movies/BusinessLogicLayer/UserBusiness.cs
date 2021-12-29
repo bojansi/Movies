@@ -56,5 +56,10 @@ namespace BusinessLogicLayer
             }
             return false;
         }
+
+        public int GetUserIdByUserName(String userName)
+        {
+            return this.userRepository.GetAllUsers().First(u => u.UserName.Equals(userName)).Id;
+        }
     }
 }
