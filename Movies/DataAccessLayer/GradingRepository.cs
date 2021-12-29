@@ -26,7 +26,7 @@ namespace DataAccessLayer
                 {
                     Grading gradin = new Grading();
                     gradin.Id = sqlDataReader.GetInt32(0);
-                    gradin.Rating = sqlDataReader.GetDecimal(1);
+                    gradin.Rating = sqlDataReader.GetInt32(1);
                     gradin.User_Id = sqlDataReader.GetInt32(2);
                     gradin.Movie_Id = sqlDataReader.GetInt32(3);
 
@@ -57,7 +57,7 @@ namespace DataAccessLayer
             {
                 SqlCommand sqlCommand = new SqlCommand();
                 sqlCommand.Connection = sqlConnection;
-                sqlCommand.CommandText = string.Format("UPDATE Grading Rating='{0}', User_Id='{1}', Movie_Id='{3}' WHERE Id='{4}'", g.Rating, g.User_Id, g.Movie_Id, g.Id);
+                sqlCommand.CommandText = string.Format("UPDATE Grading SET Rating='{0}', User_Id='{1}', Movie_Id='{3}' WHERE Id='{4}'", g.Rating, g.User_Id, g.Movie_Id, g.Id);
 
                 sqlConnection.Open();
                 return sqlCommand.ExecuteNonQuery();
