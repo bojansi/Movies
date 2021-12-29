@@ -26,6 +26,7 @@ namespace MovieApp
                 String password = textBoxPassword.Text;
                 if (this.userBusiness.GetUserForLogin(userName, password))
                 {
+                    MovieView.currentUserId = this.userBusiness.GetUserIdByUserName(userName);
                     DialogResult = DialogResult.OK;
                 }
                 else
