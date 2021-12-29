@@ -97,7 +97,7 @@ namespace MovieApp
             // 
             this.checkBoxFavorite.AutoSize = true;
             this.checkBoxFavorite.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.checkBoxFavorite.Location = new System.Drawing.Point(51, 335);
+            this.checkBoxFavorite.Location = new System.Drawing.Point(51, 380);
             this.checkBoxFavorite.Name = "checkBoxFavorite";
             this.checkBoxFavorite.Size = new System.Drawing.Size(96, 26);
             this.checkBoxFavorite.TabIndex = 4;
@@ -111,14 +111,14 @@ namespace MovieApp
             this.richTextBoxDescription.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxDescription.Location = new System.Drawing.Point(52, 162);
             this.richTextBoxDescription.Name = "richTextBoxDescription";
-            this.richTextBoxDescription.Size = new System.Drawing.Size(658, 101);
+            this.richTextBoxDescription.Size = new System.Drawing.Size(658, 154);
             this.richTextBoxDescription.TabIndex = 11;
             this.richTextBoxDescription.Text = "";
             // 
             // pictureBoxStar1
             // 
             this.pictureBoxStar1.Image = global::MovieApp.Properties.Resources.white_star;
-            this.pictureBoxStar1.Location = new System.Drawing.Point(52, 289);
+            this.pictureBoxStar1.Location = new System.Drawing.Point(52, 334);
             this.pictureBoxStar1.Name = "pictureBoxStar1";
             this.pictureBoxStar1.Size = new System.Drawing.Size(30, 30);
             this.pictureBoxStar1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -129,7 +129,7 @@ namespace MovieApp
             // pictureBoxStar2
             // 
             this.pictureBoxStar2.Image = global::MovieApp.Properties.Resources.white_star;
-            this.pictureBoxStar2.Location = new System.Drawing.Point(97, 289);
+            this.pictureBoxStar2.Location = new System.Drawing.Point(97, 334);
             this.pictureBoxStar2.Name = "pictureBoxStar2";
             this.pictureBoxStar2.Size = new System.Drawing.Size(30, 30);
             this.pictureBoxStar2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -140,7 +140,7 @@ namespace MovieApp
             // pictureBoxStar4
             // 
             this.pictureBoxStar4.Image = global::MovieApp.Properties.Resources.white_star;
-            this.pictureBoxStar4.Location = new System.Drawing.Point(192, 289);
+            this.pictureBoxStar4.Location = new System.Drawing.Point(192, 334);
             this.pictureBoxStar4.Name = "pictureBoxStar4";
             this.pictureBoxStar4.Size = new System.Drawing.Size(30, 30);
             this.pictureBoxStar4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -151,7 +151,7 @@ namespace MovieApp
             // pictureBoxStar3
             // 
             this.pictureBoxStar3.Image = global::MovieApp.Properties.Resources.white_star;
-            this.pictureBoxStar3.Location = new System.Drawing.Point(144, 289);
+            this.pictureBoxStar3.Location = new System.Drawing.Point(144, 334);
             this.pictureBoxStar3.Name = "pictureBoxStar3";
             this.pictureBoxStar3.Size = new System.Drawing.Size(30, 30);
             this.pictureBoxStar3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -162,7 +162,7 @@ namespace MovieApp
             // pictureBoxStar5
             // 
             this.pictureBoxStar5.Image = global::MovieApp.Properties.Resources.white_star;
-            this.pictureBoxStar5.Location = new System.Drawing.Point(239, 289);
+            this.pictureBoxStar5.Location = new System.Drawing.Point(239, 334);
             this.pictureBoxStar5.Name = "pictureBoxStar5";
             this.pictureBoxStar5.Size = new System.Drawing.Size(30, 30);
             this.pictureBoxStar5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -174,7 +174,7 @@ namespace MovieApp
             // 
             this.labelRate.AutoSize = true;
             this.labelRate.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelRate.Location = new System.Drawing.Point(311, 294);
+            this.labelRate.Location = new System.Drawing.Point(311, 339);
             this.labelRate.Name = "labelRate";
             this.labelRate.Size = new System.Drawing.Size(71, 22);
             this.labelRate.TabIndex = 17;
@@ -184,7 +184,7 @@ namespace MovieApp
             // 
             this.labelPrintRate.AutoSize = true;
             this.labelPrintRate.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelPrintRate.Location = new System.Drawing.Point(375, 294);
+            this.labelPrintRate.Location = new System.Drawing.Point(384, 339);
             this.labelPrintRate.Name = "labelPrintRate";
             this.labelPrintRate.Size = new System.Drawing.Size(0, 22);
             this.labelPrintRate.TabIndex = 18;
@@ -193,7 +193,7 @@ namespace MovieApp
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(52, 409);
+            this.label1.Location = new System.Drawing.Point(52, 454);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(144, 22);
             this.label1.TabIndex = 19;
@@ -203,7 +203,7 @@ namespace MovieApp
             // 
             this.labelAverageRate.AutoSize = true;
             this.labelAverageRate.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelAverageRate.Location = new System.Drawing.Point(201, 409);
+            this.labelAverageRate.Location = new System.Drawing.Point(201, 454);
             this.labelAverageRate.Name = "labelAverageRate";
             this.labelAverageRate.Size = new System.Drawing.Size(0, 22);
             this.labelAverageRate.TabIndex = 20;
@@ -213,7 +213,7 @@ namespace MovieApp
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.linkLabel1.LinkColor = System.Drawing.Color.Black;
-            this.linkLabel1.Location = new System.Drawing.Point(52, 374);
+            this.linkLabel1.Location = new System.Drawing.Point(52, 419);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(86, 22);
             this.linkLabel1.TabIndex = 21;
@@ -226,7 +226,7 @@ namespace MovieApp
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(202)))), ((int)(((byte)(139)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 488);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.labelAverageRate);
             this.Controls.Add(this.label1);

@@ -42,27 +42,27 @@ namespace MovieApp
             // labelUserName
             // 
             this.labelUserName.AutoSize = true;
-            this.labelUserName.Font = new System.Drawing.Font("Consolas", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelUserName.Location = new System.Drawing.Point(169, 197);
+            this.labelUserName.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelUserName.Location = new System.Drawing.Point(190, 197);
             this.labelUserName.Name = "labelUserName";
-            this.labelUserName.Size = new System.Drawing.Size(170, 22);
+            this.labelUserName.Size = new System.Drawing.Size(136, 22);
             this.labelUserName.TabIndex = 0;
             this.labelUserName.Text = "Korisnicko ime :";
             // 
             // labelPassword
             // 
             this.labelPassword.AutoSize = true;
-            this.labelPassword.Font = new System.Drawing.Font("Consolas", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelPassword.Location = new System.Drawing.Point(213, 271);
+            this.labelPassword.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelPassword.Location = new System.Drawing.Point(228, 267);
             this.labelPassword.Name = "labelPassword";
-            this.labelPassword.Size = new System.Drawing.Size(80, 22);
+            this.labelPassword.Size = new System.Drawing.Size(57, 22);
             this.labelPassword.TabIndex = 1;
             this.labelPassword.Text = "Sifra :";
             // 
             // textBoxUserName
             // 
             this.textBoxUserName.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBoxUserName.Location = new System.Drawing.Point(146, 231);
+            this.textBoxUserName.Location = new System.Drawing.Point(152, 228);
             this.textBoxUserName.Name = "textBoxUserName";
             this.textBoxUserName.Size = new System.Drawing.Size(215, 26);
             this.textBoxUserName.TabIndex = 2;
@@ -70,7 +70,7 @@ namespace MovieApp
             // textBoxPassword
             // 
             this.textBoxPassword.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBoxPassword.Location = new System.Drawing.Point(146, 296);
+            this.textBoxPassword.Location = new System.Drawing.Point(152, 292);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.PasswordChar = '*';
             this.textBoxPassword.Size = new System.Drawing.Size(215, 26);
@@ -81,7 +81,7 @@ namespace MovieApp
             this.buttonLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(233)))), ((int)(((byte)(207)))));
             this.buttonLogin.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonLogin.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.buttonLogin.Location = new System.Drawing.Point(203, 343);
+            this.buttonLogin.Location = new System.Drawing.Point(214, 343);
             this.buttonLogin.Name = "buttonLogin";
             this.buttonLogin.Size = new System.Drawing.Size(94, 55);
             this.buttonLogin.TabIndex = 4;
@@ -92,7 +92,7 @@ namespace MovieApp
             // pictureBox1
             // 
             this.pictureBox1.Image = global::MovieApp.Properties.Resources.LoginPicture;
-            this.pictureBox1.Location = new System.Drawing.Point(199, 38);
+            this.pictureBox1.Location = new System.Drawing.Point(198, 38);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(128, 128);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
