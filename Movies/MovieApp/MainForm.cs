@@ -49,7 +49,6 @@ namespace MovieApp
                 Movies movies = new Movies();
                 movies.Show();
             }
-
         }
 
         private void dataGridViewMovies_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -65,6 +64,12 @@ namespace MovieApp
                     mv.Show();
                 }
             }
+        }
+
+        private void buttonTopRatied_Click(object sender, EventArgs e)
+        {
+            MovieRate tr = new MovieRate();
+            tr.Show();
         }
     }
 }
