@@ -45,7 +45,6 @@ namespace MovieApp
             this.labelPrintRate = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.labelAverageRate = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStar2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStar4)).BeginInit();
@@ -193,7 +192,7 @@ namespace MovieApp
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(52, 454);
+            this.label1.Location = new System.Drawing.Point(52, 420);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(144, 22);
             this.label1.TabIndex = 19;
@@ -203,31 +202,17 @@ namespace MovieApp
             // 
             this.labelAverageRate.AutoSize = true;
             this.labelAverageRate.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelAverageRate.Location = new System.Drawing.Point(201, 454);
+            this.labelAverageRate.Location = new System.Drawing.Point(201, 420);
             this.labelAverageRate.Name = "labelAverageRate";
             this.labelAverageRate.Size = new System.Drawing.Size(0, 22);
             this.labelAverageRate.TabIndex = 20;
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.linkLabel1.LinkColor = System.Drawing.Color.Black;
-            this.linkLabel1.Location = new System.Drawing.Point(52, 419);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(86, 22);
-            this.linkLabel1.TabIndex = 21;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "IMDBLink";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // MovieView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(202)))), ((int)(((byte)(139)))));
-            this.ClientSize = new System.Drawing.Size(800, 488);
-            this.Controls.Add(this.linkLabel1);
+            this.ClientSize = new System.Drawing.Size(800, 466);
             this.Controls.Add(this.labelAverageRate);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.labelPrintRate);
@@ -275,6 +260,5 @@ namespace MovieApp
         private System.Windows.Forms.Label labelPrintRate;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labelAverageRate;
-        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
